@@ -324,6 +324,14 @@ footer{
             align-items: center;
         }
     }
+
+    #facebook{
+        margin-right: 0px !important;
+    }
+
+    #location, #facebook{
+        width: 200px !important;
+    }
 }
 
 /* mobile only */
