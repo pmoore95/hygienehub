@@ -314,6 +314,18 @@ footer{
     }
 }
 
+/* xs */
+@media (max-width: 575px){
+    #order{
+        a{
+            font-size: 1.25rem !important;
+            width: 210px !important;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 /* mobile only */
 @media (max-width: 1200px){
     nav{

@@ -357,6 +357,20 @@ footer #location i {
   margin-right: 5px;
 }
 
+/* xs */
+@media (max-width: 575px) {
+  #order a {
+    font-size: 1.25rem !important;
+    width: 210px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 /* mobile only */
 @media (max-width: 1200px) {
   nav div {
@@ -394,6 +408,7 @@ footer #location i {
   #content #banner #details #order #wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0 !important;
   }
   #content #banner #details #order #wrapper #numbers, #content #banner #details #order #wrapper #email {
     width: 100%;
