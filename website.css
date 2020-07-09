@@ -89,6 +89,7 @@ nav div button:hover:after {
   border-radius: 3px;
   color: #f0ff00;
   font-weight: normal;
+  text-align: center;
 }
 
 #content #banner #details #info {
@@ -138,6 +139,10 @@ nav div button:hover:after {
   margin-bottom: 20px;
   border-radius: 5px;
   color: white;
+}
+
+#content #banner #details #order h1 {
+  text-align: start;
 }
 
 #content #banner #details #order a {
@@ -208,10 +213,12 @@ nav div button:hover:after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #content #banner #details #images img {
-  width: 33%;
+  width: 200px;
   height: auto;
 }
 

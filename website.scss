@@ -82,6 +82,7 @@ nav{
                     border-radius: 3px;
                     color: $yellow;
                     font-weight: normal;
+                    text-align: center;
                 }
 
                 #info{
@@ -127,6 +128,9 @@ nav{
                     border-radius: 5px;
                     color: white;
 
+                    h1{
+                        text-align: start;
+                    }
                     a{
                         font-size: 1.75rem;
                         margin: 5px;
@@ -179,9 +183,10 @@ nav{
                     display: flex;
                     justify-content: space-evenly;
                     align-items: flex-start;
+                    flex-wrap: wrap;
 
                     img{
-                        width: 33%;
+                        width: 200px;
                         height: auto;
                     }
                 }
