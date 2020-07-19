@@ -277,14 +277,50 @@ nav div button:hover:after {
 
 #content #yellow #stand #prices {
   position: absolute;
-  top: 40%;
+  top: 38%;
   margin-left: 30px;
   font-weight: bold;
   text-align: center;
   font-size: 1rem;
 }
 
+#content #yellow #stand #prices #slash {
+  background-color: red;
+  height: 100%;
+  position: absolute;
+  width: 10px;
+  -webkit-transform: rotate;
+          transform: rotate;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 50%;
+  border-radius: 2px;
+}
+
 #content #yellow #stand #prices p {
+  font-family: 'arial' !important;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 2rem;
+}
+
+#content #yellow #stand #new-prices {
+  position: absolute;
+  top: 55%;
+  margin-left: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#content #yellow #stand #new-prices #now {
+  font-family: unset !important;
+  color: red;
+  -webkit-text-stroke-width: 0px;
+}
+
+#content #yellow #stand #new-prices p {
   font-family: 'arial' !important;
   color: white;
   -webkit-text-stroke-width: 1px;
