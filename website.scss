@@ -14,6 +14,10 @@ $blue: rgb(0, 89, 255);
     font-family: 'Staatliches', cursive;
 }
 
+body{
+    background-color: #ccc;
+}
+
 nav{
     background-color: $black;
 
@@ -89,8 +93,6 @@ nav{
 
                     ul{
                         margin-top: 20px;
-                        border-bottom: 2px solid $black;
-                        padding-bottom: 20px;
                         padding-left: 20px;
                         list-style: none;
     
@@ -115,6 +117,59 @@ nav{
                                 font-family: 'arial';
                             }
                         }
+                    }
+                }
+
+                #prices{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-evenly;
+                    background-color: white;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    flex-wrap: wrap;
+                    margin: 40px 0px 40px 0px;
+                    box-shadow: 0px 0px 25px -15px rgba(0, 0, 0, 0.75);
+
+                    #for-only{
+                        width: 100%;
+                        font-size: 1.25rem;
+                        text-align: start;
+                    }
+
+                    #or{
+                        display: flex;
+                        align-items: center;
+                        padding: 0;
+                        padding-bottom: 40px;
+                    }
+                    h1{
+                        background-color: unset;
+                        color: $black;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        padding-bottom: 40px;
+                        position: relative;
+                        width: 247px;
+
+                        h1{
+                            font-family: 'arial' !important;
+                            span{
+                                font-family: 'Staatliches', cursive;
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+
+                    #with{
+                        position: absolute;
+                        bottom: 0;
+                        margin-bottom: 20px;
+                        word-spacing: 1px;
                     }
                 }
 
@@ -181,6 +236,7 @@ nav{
                     justify-content: space-evenly;
                     align-items: flex-start;
                     flex-wrap: wrap;
+                    box-shadow: 0px 0px 25px -15px rgba(0, 0, 0, 0.75);
 
                     img{
                         width: 200px;
@@ -226,6 +282,7 @@ nav{
                     width: 100px;
                     height: 100px;
                     margin-left: 20px;
+                    display: none;
                     img{
                         width: 150px;
                         height: auto;
@@ -242,6 +299,7 @@ nav{
                     font-weight: bold;
                     text-align: center;
                     font-size: 1rem;
+                    display: none;
 
                     #slash{
                         background-color: red;
@@ -357,6 +415,12 @@ footer{
             width: 210px !important;
             display: flex;
             align-items: center;
+        }
+    }
+
+    #prices{
+        div{
+            width: 100% !important;
         }
     }
 

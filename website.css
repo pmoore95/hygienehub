@@ -6,6 +6,10 @@
   font-family: 'Staatliches', cursive;
 }
 
+body {
+  background-color: #ccc;
+}
+
 nav {
   background-color: #1d1d1d;
 }
@@ -102,8 +106,6 @@ nav div button:hover:after {
 
 #content #banner #details #info ul {
   margin-top: 20px;
-  border-bottom: 2px solid #1d1d1d;
-  padding-bottom: 20px;
   padding-left: 20px;
   list-style: none;
 }
@@ -131,6 +133,81 @@ nav div button:hover:after {
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
   font-family: 'arial';
+}
+
+#content #banner #details #prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0px 40px 0px;
+  -webkit-box-shadow: 0px 0px 25px -15px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 25px -15px rgba(0, 0, 0, 0.75);
+}
+
+#content #banner #details #prices #for-only {
+  width: 100%;
+  font-size: 1.25rem;
+  text-align: start;
+}
+
+#content #banner #details #prices #or {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+#content #banner #details #prices h1 {
+  background-color: unset;
+  color: #1d1d1d;
+}
+
+#content #banner #details #prices div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 40px;
+  position: relative;
+  width: 247px;
+}
+
+#content #banner #details #prices div h1 {
+  font-family: 'arial' !important;
+}
+
+#content #banner #details #prices div h1 span {
+  font-family: 'Staatliches', cursive;
+  font-size: 1rem;
+}
+
+#content #banner #details #prices #with {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  word-spacing: 1px;
 }
 
 #content #banner #details #order {
@@ -215,6 +292,8 @@ nav div button:hover:after {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-shadow: 0px 0px 25px -15px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 25px -15px rgba(0, 0, 0, 0.75);
 }
 
 #content #banner #details #images img {
@@ -267,6 +346,7 @@ nav div button:hover:after {
   width: 100px;
   height: 100px;
   margin-left: 20px;
+  display: none;
 }
 
 #content #yellow #stand #promo img {
@@ -282,6 +362,7 @@ nav div button:hover:after {
   font-weight: bold;
   text-align: center;
   font-size: 1rem;
+  display: none;
 }
 
 #content #yellow #stand #prices #slash {
@@ -411,6 +492,9 @@ footer #location i {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #prices div {
+    width: 100% !important;
   }
   #facebook {
     margin-right: 0px !important;
